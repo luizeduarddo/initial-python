@@ -1,7 +1,7 @@
 while True:
-        num1 = input ("Digite um numero: ")
-        num2 = input ("Digite outro numero: ")
-        operator = input ('Digite o operador simples desejado (+ - / *): ')
+        num1 = input ("Enter one number: ")
+        num2 = input ("Enter another number: ")
+        operator = input ('Enter any of the operators (+ - / *): ')
         
         num1_float = 0
         num2_float = 0
@@ -15,20 +15,20 @@ while True:
             num_valid = None
 
         if  num_valid is None:
-            print('Um ou ambos os numeros digitados sao invalidos. Digite novamente')
+            print('One or both of the numbers entered are invalid. Type it again')
             continue   
 
         operator_permited = '+-/*'
 
         if operator not in operator_permited:
-            print('Digite apenas os operadores informados.')
+            print('Enter only the given operators.')
             continue     
         
         if len(operator) > 1:
-            print('Digite apenas um operador.')
+            print('Enter only one operator.')
             continue 
 
-        print('Realizando sua conta. Confira abaixo o resultado: ')
+        print('Making your account. Check the result below: ')
 
         if operator == '+':
             print(f'{num1_float} + {num2_float}=',num1_float + num2_float)
@@ -40,7 +40,7 @@ while True:
             print(f'{num1_float} * {num2_float}=',num1_float * num2_float)
 
 
-        sair = input('Quer Sair? [S]im: ').lower().startswith('s')
+        out = input('Do you want to quit? [Y]es: ').lower().startswith('y')
 
-        if sair is True:
+        if out is True:
             break
