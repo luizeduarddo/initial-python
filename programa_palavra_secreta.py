@@ -1,6 +1,6 @@
 import os
 
-palavra_secreta = 'leao'
+palavra_secreta = 'fortaleza'
 letras_certas = ''
 tentativas = 0
 
@@ -26,7 +26,7 @@ while True:
 
     if palavra_formada == palavra_secreta:
         os.system('cls')
-        print('Boa cachorro!! Acertou a palavra!')
+        print('Boa companheiro!! Acertou a palavra!')
         print('A palavra era', palavra_secreta)
         print('Tentativas:', tentativas)
         letras_certas = ''
