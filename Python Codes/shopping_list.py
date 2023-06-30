@@ -1,7 +1,7 @@
 import os
 list = []
 while True:
-    print('Select one option ')
+    print('Select one option')
     option = input('[a]dd [d]delete [l]ist: ')
 
     if option == 'a':
