@@ -1,7 +1,7 @@
 while True:
         num1 = input ("Enter one number: ")
         num2 = input ("Enter another number: ")
-        operator = input ('Enter any of the operators (+ - / *): ')
+        operator = input ('Enter any of the operators (+ - / * ): ')
         
         num1_float = 0
         num2_float = 0
