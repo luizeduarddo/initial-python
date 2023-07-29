@@ -1,4 +1,5 @@
-cpf_user = "33550728000" #CPF gerado aleatoriamente
+entry = input ('Insert your CPF: ')
+cpf_user = entry.replace('.', '').replace('-', '')
 
 nine_digits = cpf_user[:9]
 cont_regressivo1 = 10
