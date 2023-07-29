@@ -4,14 +4,14 @@ import sys
 
 cpf_gerado = ''
 for i in range(9):
-    cpf_gerado += str(random.randint(0, 9))
+    cpf_gerado += str(random.randint(0, 9)) #Gerando um numero int aleatorio de 0 a 9
 
 cont_regressivo1 = 10
 
 resultado_dig1 = 0
 for digito in cpf_gerado:
-    resultado_dig1  += int(digito) * cont_regressivo1
-    cont_regressivo1 -= 1
+    resultado_dig1  += int(digito) * cont_regressivo1 # Soma o valor do digito e multiplica pelo contador regressivo
+    cont_regressivo1 -= 1                             #Diminui um numero do contador a cada laco do For para seguir o calculo do cpf
 digito_1 = (resultado_dig1 * 10) % 11
 digito_1 = digito_1 if digito_1 <= 9 else 0
 
