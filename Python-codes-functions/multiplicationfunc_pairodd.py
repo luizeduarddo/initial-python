@@ -7,7 +7,7 @@ def multiplication(*args):
         total = total * number
     return total
 
-final_value = multiplication(2,4,5,6,7,9)
+final_value = multiplication(2,4,5,6,7,12)
 print(final_value)
 
 def pair_odd(total):
